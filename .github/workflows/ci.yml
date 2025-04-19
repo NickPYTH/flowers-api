@@ -35,4 +35,4 @@ jobs:
         run: |
           eval `ssh-agent -s`
           ssh-add ~/.ssh/id_rsa
-          ssh -o StrictHostKeyChecking=no root@83.222.9.213 "your-deployment-command"
+          ssh -i ~/.ssh/id_rsa root@83.222.9.213 "your-deployment-command"
