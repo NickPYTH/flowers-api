@@ -35,5 +35,5 @@ jobs:
         run: |
           eval `ssh-agent -s`
           ssh-add ~/.ssh/id_rsa
-          cat ~/.ssh/id_rsa 
+          echo ~/.ssh/id_rsa 
           ssh -i ~/.ssh/id_rsa root@83.222.9.213
