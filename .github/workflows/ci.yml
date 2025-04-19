@@ -25,7 +25,7 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" > private_key
           chmod 600 private_key
-          ssh -o StrictHostKeyChecking=no -i private_key root@83.222.9.213 &lt;&lt; 'EOF'
+          ssh -o StrictHostKeyChecking=no -i private_key root@83.222.9.213 << 'EOF'
             cd /root/flowers-api
             sudo docker stop myapp || true
             sudo docker rm myapp || true
