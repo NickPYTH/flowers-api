@@ -5,4 +5,5 @@ WORKDIR /app
 COPY req.txt /app/
 RUN pip install --upgrade pip && pip install -r req.txt
 ADD . /app/
+WORKDIR /app/flowersshop
 CMD ["python", "manage.py", "runserver", "0.0.0.0:7777"]
