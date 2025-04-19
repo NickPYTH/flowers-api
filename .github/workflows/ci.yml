@@ -24,7 +24,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
           echo $SSH_PRIVATE_KEY > private_key
-          echo "------"
+          echo "----1--"
           cat private_key
           echo "------"
           chmod 777 private_key
